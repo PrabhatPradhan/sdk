@@ -25,11 +25,8 @@ const albums = [
   },
 ];
 
-interface SectionHeadingProps {
-  title: string;
-  className?: string; // optional for custom styles
-}
-export default function AlbumCategories({ title, className }: SectionHeadingProps) {
+ 
+export default function AlbumCategories( ) {
   return (
     <section className="bg-white py-4">
       <div className="max-w-7xl mx-auto px-4 ">
@@ -37,9 +34,7 @@ export default function AlbumCategories({ title, className }: SectionHeadingProp
           <h5 className="text-2xl font-semibold tracking-widest text-gray-500 uppercase mb-1">
             Albums Categories
           </h5>
-          <h2 className={`text-3xl font-bold text-gray-800 ${className || ''}`}>
-      {title}
-    </h2>
+        
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 ">
