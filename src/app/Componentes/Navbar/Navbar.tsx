@@ -17,8 +17,8 @@ export default function Navbar() {
           <Image
             src="/Images/skg-logo.png"
             alt="Logo"
-            width={140}
-            height={80}
+            width={180}
+            height={90}
           />
         </div>
 
@@ -53,8 +53,8 @@ export default function Navbar() {
           </div>
 
           <Link href="/courses">Courses</Link>
-          <Link href="#">Invitation Video</Link>
-          <Link href="#">Clip Art</Link>
+          <Link href="/invitationVideo">Invitation Video</Link>
+          <Link href="/clipArt">Clip Art</Link>
           <Link href="/contact">Contact</Link>
         </nav>
 
@@ -63,10 +63,12 @@ export default function Navbar() {
           <div className="bg-black text-white p-2 rounded-full">
             <Phone size={20} />
           </div>
+          <a href="tel:+91 9990144668">
           <div className="text-sm leading-tight">
             <p className="text-gray-600">Contact us</p>
             <p className="font-bold text-black">+91 9990144668</p>
           </div>
+          </a>.
         </div>
 
         {/* Mobile Hamburger */}
@@ -125,8 +127,8 @@ export default function Navbar() {
           </div>
 
           <Link href="/courses" onClick={() => setOpen(false)}>Courses</Link>
-          <Link href="#" onClick={() => setOpen(false)}>Invitation Video</Link>
-          <Link href="#" onClick={() => setOpen(false)}>Clip Art</Link>
+          <Link href="/invitationVideo" onClick={() => setOpen(false)}>Invitation Video</Link>
+          <Link href="/clipArt" onClick={() => setOpen(false)}>Clip Art</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
         </nav>
 

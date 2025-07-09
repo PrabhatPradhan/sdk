@@ -11,7 +11,7 @@ export default function pajes() {
     <footer className="bg-gray-800 text-white py-4 text-center text-sm">
         <p>
           <span className="text-gray-300">Copyright © 2022</span>{" "}
-          <span className="font-semibold text-yellow-400">SKG PSD.</span>{" "}
+          <a href="tel:+91 9990144668"><span className="font-semibold text-yellow-400">SKG PSD.</span>{" "}</a> 
           <span className="font-bold">All Right Reserved.</span>
         </p>
       </footer>

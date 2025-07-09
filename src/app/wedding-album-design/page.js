@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { Dialog } from '@headlessui/react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import SearchBar from "../Componentes/SearchBar/SearchBar"
+
 const images = [
   '/Images/Categories-1.jpg',
   '/Images/Categories-2.jpg',
@@ -28,7 +28,7 @@ export default function Gallery() {
     <>
     <Navbar/>
     <section className="p-6">
-      <SearchBar/>
+      
       <h2 className="text-center text-3xl font-bold mb-6 mt-8">Our Best Design</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -84,7 +84,7 @@ export default function Gallery() {
     <footer className="bg-gray-800 text-white py-4 text-center text-sm">
         <p>
           <span className="text-gray-300">Copyright © 2022</span>{" "}
-          <span className="font-semibold text-yellow-400">SKG PSD.</span>{" "}
+          <a href="tel:+91 9990144668"><span className="font-semibold text-yellow-400">SKG PSD.</span>{" "}</a>
           <span className="font-bold">All Right Reserved.</span>
         </p>
       </footer>

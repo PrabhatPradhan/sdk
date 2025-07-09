@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Navbar from '../Componentes/Navbar/Navbar';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -88,12 +89,12 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {['/Images/4.jpg', '/Images/5.jpg', '/Images/6.jpg', '/Images/4.jpg'].map((src, index) => (
               <div key={index} className="relative w-full h-48">
-                <Image
+              <Link href="/wedding-album-design">  <Image
                   src={src} // Replace with real paths to your preview images
                   alt={`Template ${index + 1}`}
                   fill
                   className="object-cover rounded-lg shadow-sm"
-                />
+                /></Link>
               </div>
             ))}
           </div>
@@ -104,7 +105,7 @@ export default function About() {
     <footer className="bg-gray-800 text-white py-4 text-center text-sm">
         <p>
           <span className="text-gray-300">Copyright © 2022</span>{" "}
-          <span className="font-semibold text-yellow-400">SKG PSD.</span>{" "}
+          <a href="tel:+91 9990144668">   <span className="font-semibold text-yellow-400">SKG PSD.</span>{" "}</a>
           <span className="font-bold">All Right Reserved.</span>
         </p>
       </footer>
