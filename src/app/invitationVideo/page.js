@@ -5,9 +5,9 @@ import Navbar from "../Componentes/Navbar/Navbar";
 export default function Page() {
   const videoUrls = [
     "https://www.youtube.com/embed/_4jR9njMhSo",
-    "https://www.youtube.com/embed/ScMzIvxBSi4",
-    "https://www.youtube.com/embed/ysz5S6PUM-U",
-    "https://www.youtube.com/embed/iLnmTe5Q2Qw",
+    "https://www.youtube.com/embed/l0FE8tew6Ws",
+    "https://www.youtube.com/embed/WRHhvh_a-G0",
+    "https://www.youtube.com/embed/RWLc1sOTDnQ",
   ];
 
   return (
