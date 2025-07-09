@@ -3,11 +3,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SearchBar from "../SearchBar/SearchBar"
 export default function CardsSection() {
+  const handleSearch = (query: string) => {
+    console.log("Searching for:", query);
+    // add your search logic here
+  };
   return (
     <>
-    <div className='flex justify-center mt-12'>
-    <SearchBar />
-    </div>
+    <div className="flex justify-center mt-12">
+        <SearchBar onSearch={handleSearch} />
+      </div>
     
 
     <section className="bg-white py-20">
