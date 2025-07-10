@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import SearchBar from "../SearchBar/SearchBar"
+// import SearchBar from "../SearchBar/SearchBar"
 export default function CardsSection() {
   const handleSearch = (query: string) => {
     console.log("Searching for:", query);
@@ -9,10 +9,10 @@ export default function CardsSection() {
   };
   return (
     <>
-    <div className="flex justify-center mt-12">
+    {/* <div className="flex justify-center mt-12">
         <SearchBar onSearch={handleSearch} />
       </div>
-    
+     */}
 
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">

@@ -5,7 +5,7 @@ import React from 'react'
 import Navbar from '../Componentes/Navbar/Navbar'
 
  
-import Link from 'next/link';
+ 
 
 const albums = [
   {
@@ -73,12 +73,12 @@ export default function pajes() {
               <div className="p-4 text-center">
                 <h3 className="text-md font-bold text-gray-800">{album.title}</h3>
                 <p className="text-sm text-gray-600 mb-4">{album.subtitle}</p>
-                <Link
-                  href="#"
+              <a
+                  href="https://wa.me/919990144668?text=Hi%2C%20I'm%20interested%20in%20the%20"
                   className="inline-block bg-black text-white px-6 py-2 text-sm font-semibold rounded hover:bg-gray-800 transition"
                 >
                   Buy Now
-                </Link>
+                </a>
               </div>
             </div>
           ))}

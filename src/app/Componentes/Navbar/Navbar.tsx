@@ -1,16 +1,17 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { Phone, ChevronDown } from "lucide-react";
-import { useState } from "react";
-import clsx from "clsx";
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import { Phone, ChevronDown } from 'lucide-react';
+import { useState } from 'react';
+import clsx from 'clsx';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [albumDropdownOpen, setAlbumDropdownOpen] = useState(false); // for mobile
 
   return (
-    <header className="bg-white shadow px-4 md:px-10 py-4 relative z-50">
+    <header className="sticky top-0 bg-white shadow px-4 md:px-10 py-4 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex-shrink-0">
@@ -38,7 +39,7 @@ export default function Navbar() {
             </div>
             <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-10">
               <ul className="py-2">
-                {["12 X 36", "18 X 24", "20 X 30", "14 X 40"].map((item) => (
+                {["12 X 36 album", "18 X 24 album", "20 X 30 album", "14 X 40 album"].map((item) => (
                   <li key={item}>
                     <Link
                       href="/albumpsd"
@@ -64,11 +65,11 @@ export default function Navbar() {
             <Phone size={20} />
           </div>
           <a href="tel:+91 9990144668">
-          <div className="text-sm leading-tight">
-            <p className="text-gray-600">Contact us</p>
-            <p className="font-bold text-black">+91 9990144668</p>
-          </div>
-          </a>.
+            <div className="text-sm leading-tight">
+              <p className="text-gray-600">Contact us</p>
+              <p className="font-bold text-black">+91 9990144668</p>
+            </div>
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -111,7 +112,7 @@ export default function Navbar() {
             </div>
             {albumDropdownOpen && (
               <ul className="pl-4 mt-2 space-y-1">
-                {["12 X 36", "18 X 24", "20 X 30", "14 X 40"].map((item) => (
+                {["12 X 36 album", "18 X 24 album", "20 X 30 album", "14 X 40 album"].map((item) => (
                   <li key={item}>
                     <Link
                       href="/albumpsd"

@@ -1,9 +1,11 @@
 'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Eye } from 'lucide-react';
 import Navbar from '../Componentes/Navbar/Navbar';
-import SearchBar from "../Componentes/SearchBar/SearchBar"
+// import SearchBar from '../Componentes/SearchBar/SearchBar';
+
 const albums = [
   {
     slug: 'wedding-album-design',
@@ -39,9 +41,11 @@ export default function AlbumGrid() {
   return (
     <>
       <Navbar />
-      <div className='flex justify-center mt-12'>
-    <SearchBar />
-    </div>
+
+      {/* <div className="flex justify-center mt-12">
+        <SearchBar />
+      </div> */}
+
       <section className="bg-white py-16 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {albums.map((album) => {
@@ -54,13 +58,14 @@ export default function AlbumGrid() {
                 className="bg-white rounded-lg shadow hover:shadow-xl transition duration-300 overflow-hidden"
               >
                 <div className="relative w-full h-56">
-               <Link href="wedding-album-design">  <Image
-                    src={album.image}
-                    alt={album.title}
-                    fill
-                    className="object-cover"
-                  />
-                  </Link> 
+                  <Link href={albumPath}>
+                    <Image
+                      src={album.image}
+                      alt={album.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </Link>
                 </div>
 
                 <div className="p-4">
@@ -98,11 +103,13 @@ export default function AlbumGrid() {
           })}
         </div>
       </section>
-      
+
       <footer className="bg-gray-800 text-white py-4 text-center text-sm">
         <p>
-          <span className="text-gray-300">Copyright © 2022</span>{" "}
-          <a href="tel:+91 9990144668"><span className="font-semibold text-yellow-400">SKG PSD.</span>{" "}</a>
+          <span className="text-gray-300">Copyright © 2022</span>{' '}
+          <a href="tel:+91 9990144668">
+            <span className="font-semibold text-yellow-400">SKG PSD.</span>{' '}
+          </a>
           <span className="font-bold">All Right Reserved.</span>
         </p>
       </footer>

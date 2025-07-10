@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Navbar from "../Componentes/Navbar/Navbar";
 
@@ -25,7 +25,7 @@ export default function Page() {
               nec sagittis orci urna at magna. Sed pulvinar arcu vel sapien
               convallis, vitae facilisis nulla commodo. Lorem ipsum dolor sit
               amet, consectetur adipiscing elit. Vivamus euismod, nunc at
-             </p>
+            </p>
           </div>
 
           {/* Video */}
@@ -43,13 +43,17 @@ export default function Page() {
             </div>
           </div>
         </div>
+         
       </div>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-4 text-center text-sm">
         <p>
           <span className="text-gray-300">Copyright © 2022</span>{" "}
-          <a href="tel:+91 9990144668">  <span className="font-semibold text-yellow-400">SKG PSD.</span>{" "}</a>
+          <a href="tel:+91 9990144668">
+            {" "}
+            <span className="font-semibold text-yellow-400">SKG PSD.</span>{" "}
+          </a>
           <span className="font-bold">All Right Reserved.</span>
         </p>
       </footer>
