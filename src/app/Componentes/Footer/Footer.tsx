@@ -71,7 +71,9 @@ export default function Biography() {
 
     {/* Image */}
     <div className="md:w-1/2">
-      <img
+      <Image
+      height={0}
+      width={0}
         src="/Images/sdk.jpeg"
         alt="SKG Photography"
         className="w-full h-[26rem] rounded-lg shadow-lg object-cover"
